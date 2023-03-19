@@ -1,74 +1,74 @@
-// 53
-//4 suits: spades, diamonds, heats, clubs
-//2-10 j  q k a
+// // 53
+// //4 suits: spades, diamonds, heats, clubs
+// //2-10 j  q k a
 
-// const suits = ['Spades', 'Hearts ', 'Diamonds', 'clubs']
-// const values = [ '2','3','4','5','6','7','8','9','10','jack','queen','king','ace']
+// // const suits = ['Spades', 'Hearts ', 'Diamonds', 'clubs']
+// // const values = [ '2','3','4','5','6','7','8','9','10','jack','queen','king','ace']
 
-//forEach, 
-// const deckOfcards =[];
+// //forEach, 
+// // const deckOfcards =[];
 
-// suits.forEach(suit => {
-//     values.forEach(value =>{
-//         console.log(`${suit}: ${value}`);
+// // suits.forEach(suit => {
+// //     values.forEach(value =>{
+// //         console.log(`${suit}: ${value}`);
+// //     })
+// // })
+
+// // only the deckof cards 
+
+// //refector the card to be a class 
+// class Card {
+//     constructor(value , suit) {
+//     this.value = value
+//     this.suit = suit
+//     }
+    
+// }
+// //cards, discard pile, cards remaning, order, shuffeling
+// class Deck {
+//     constructor(){
+//        this.thiscardPile = [];
+//        this.suits = ['Spades', 'Hearts ', 'Diamonds', 'clubs'];
+//        this.values = [ '2','3','4','5','6','7','8','9','10','jack','queen','king','ace'];
+//        this.deck = [] 
+//        this.suits.forEach((suit) => {
+//        this.values.forEach((value) => {
+//         const card = new Card(suit, value);
+//         this.deck.push(card);
 //     })
 // })
+//     }
+//     discardCards() {
+//       const discardedCards = this.deck.splice(0, 5);
+//       this.discardPile.push(...discardedCards);
+//     }
 
-// only the deckof cards 
+//    shuffleDeck() {
+//      let currentIndex = this.deck.length,
+//       randomIndex;
 
-//refector the card to be a class 
-class Card {
-    constructor(value , suit) {
-    this.value = value
-    this.suit = suit
-    }
-    
-}
-//cards, discard pile, cards remaning, order, shuffeling
-class Deck {
-    constructor(){
-       this.thiscardPile = [];
-       this.suits = ['Spades', 'Hearts ', 'Diamonds', 'clubs'];
-       this.values = [ '2','3','4','5','6','7','8','9','10','jack','queen','king','ace'];
-       this.deck = [] 
-       this.suits.forEach((suit) => {
-       this.values.forEach((value) => {
-        const card = new Card(suit, value);
-        this.deck.push(card);
-    })
-})
-    }
-    discardCards() {
-      const discardedCards = this.deck.splice(0, 5);
-      this.discardPile.push(...discardedCards);
-    }
+//     // While there remain elements to shuffle.
+//     while (currentIndex != 0) {
+//       // Pick a remaining element.
+//       randomIndex = Math.floor(Math.random() * currentIndex);
+//       currentIndex--;
 
-   shuffleDeck() {
-     let currentIndex = this.deck.length,
-      randomIndex;
+//       // And swap it with the current element.
+//       [this.deck[currentIndex], this.deck[randomIndex]] = [
+//         this.deck[randomIndex],
+//         this.deck[currentIndex],
+//       ];
+//     }
+// }
+// }
+// const deck1 = new Deck();
+// deck1.shuffleDeck();
+// const deck2 = new Deck();
+// // deck1.discardCards()
 
-    // While there remain elements to shuffle.
-    while (currentIndex != 0) {
-      // Pick a remaining element.
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-
-      // And swap it with the current element.
-      [this.deck[currentIndex], this.deck[randomIndex]] = [
-        this.deck[randomIndex],
-        this.deck[currentIndex],
-      ];
-    }
-}
-}
-const deck1 = new Deck();
-deck1.shuffleDeck();
-const deck2 = new Deck();
-// deck1.discardCards()
-
-console.log(deck1)
-console.log(deck1.deck.length);
-console.log(deck1.discardPile);
+// console.log(deck1)
+// console.log(deck1.deck.length);
+// console.log(deck1.discardPile);
 
 // console.log(deck2);
 
@@ -119,3 +119,5 @@ console.log(deck1.discardPile);
 //   }
 
 // const treeOfSpades = ...
+
+
