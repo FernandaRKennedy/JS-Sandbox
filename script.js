@@ -94,9 +94,9 @@ document.body.appendChild(div)
 // div.innerHTML = '<p> nick, fernanda, athena</p>'
 // document.body.appendChild(div)
 
-
-const container = document.querySelector('.container')//select
 const names = ['nick', 'fernanda', 'athena'] //data 
+const container = document.querySelector('.container')//select
+
 names.forEach(name =>{
     const tag = document.createElement('h2')
     tag.textContent = name 
